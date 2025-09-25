@@ -1,8 +1,8 @@
 import Header from './components/Header/Header';
 import TodoList from './components/TodoList/TodoList';
-import WeatherWidget from './components/WeatherWidget/WeatherWidget';
-import NewsWidget from './components/NewsWidget/NewsWidget';
-import NoteWidget from './components/NoteWidget/NoteWidget';
+import WeatherWidget from './components/Widgets/WeatherWidget/WeatherWidget';
+import NewsWidget from './components/Widgets/NewsWidget/NewsWidget';
+import NoteWidget from './components/Widgets/NoteWidget/NoteWidget';
 import './App.css'
 
 function App() {
