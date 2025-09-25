@@ -5,30 +5,35 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const userName = "Kindon";
+  const currentTime = "3:30 PM";
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="app">
+      {/* Header */}
+      <header className="header">
+        <h1>Hello, {userName}</h1>
+        <div className="time">{currentTime}</div>
+      </header>
+
+      {/* Main Content Area */}
+      <main className="main-content">
+        {/* Left sidebar - Todo list */}
+        <aside className="sidebar left-sidebar">
+          <h2>Todo List</h2>
+          <ul>
+            <li>Todo item</li>
+          </ul>
+        </aside>
+
+        {/* Center area - Widgets */}
+        <section className="widgets"> 
+          <div className="widget">Weather</div>
+          <div className="widget">Newsfeed</div>
+          <div className="widget">Notes</div>
+        </section>
+      </main>
+    </div>
   )
 }
 
